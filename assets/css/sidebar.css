@@ -1,0 +1,246 @@
+.infos-bar {
+    background: #20202a;
+    width: 450px;
+    min-width: 290px;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    -webkit-box-shadow: 0 3px 8px 0 rgba(70, 70, 105, 0.2);
+    box-shadow: 0 3px 8px 0 rgba(70, 70, 105, 0.2);
+    transform: translateX(0);
+    -webkit-transition: 0.55s ease-in-out;
+    transition: 0.55s ease-in-out;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.infos-bar .infos-header{
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
+    text-align: center;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+    box-shadow: 0 1px 4px 0 rgba(15, 15, 10, 0.1);
+    box-shadow: 10px 0px 10px var(--colors-grey-950);
+    border-radius: 30px;
+}
+
+.infos-bar .infos-header .infos-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+  
+.infos-bar .infos-header .infos-avatar img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--colors-grey-950);
+    padding: 7px;
+}
+
+.infos-avatar .circle-spin {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .15rem solid rgba(37, 37, 50, 0.98);
+    border-bottom: .15rem solid rgba(37, 37, 50, 0.98);
+    border-left: .15rem solid var(--colors-ignite-light);
+    border-right: .15rem solid var(--colors-ignite-light);
+    animation: spin 9s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    33.33% {
+      transform: rotate(240deg);
+    }
+    66.66% {
+      transform: rotate(480deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+}
+
+.infos-bar .infos-header .infos-name {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.infos-bar .infos-header .infos-cargo {
+    width: 50%;
+    font-size: 16px;
+    color: var(--colors-grey-500);
+}
+
+.infos-bar .skills-info-bar {
+    margin-top: 10px;
+    padding: 0px 25px;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.infos-bar .skills-info-bar .scrollbar {
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.infos-bar .skills-info-bar .scrollbar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.infos-bar .skills-info-bar .scrollbar::-webkit-scrollbar-track {
+    background-color: var(--colors-grey-900);
+    border-radius: 6px;
+}
+
+.infos-bar .skills-info-bar .scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--colors-grey-950);
+    border-radius: 6px;
+}
+
+
+.infos-bar .skills-info-bar .scrollbar{
+    overflow: auto;
+    height: 100%;
+}
+
+.infos-bar .skills-info-bar .infos-user {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.infos-bar .skills-info-bar .infos-user li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infos-bar .skills-info-bar li h4{
+    font-size: 16px;
+}
+
+.infos-bar .skills-info-bar li span{
+    font-size: 16px;
+    color: var(--colors-grey-500);
+}
+
+.infos-bar .skills-info-bar .progressbar-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infos-bar .skills-info-bar ul{
+    padding: 70px 0;
+    border-bottom: 1px solid var(--colors-grey-600);
+}
+
+.infos-bar .skills-info-bar ul:last-child{
+    border-bottom: 0px;
+}
+
+.infos-bar .skills-info-bar .skills-bars{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.infos-bar .skills-info-bar .skills-bars .progressbar{
+    background-color: var(--colors-grey-950);
+    height: 7px;
+    border-radius: 2px;
+}
+
+.infos-bar .skills-info-bar .skills-bars .progressbar .progress{
+    background-color: var(--colors-ignite-light);
+    height: 7px;
+    border-radius: 2px;
+    animation: progress 0.3s ease-in-out forwards;
+    opacity: 0;
+}
+
+
+.infos-bar .skills-info-bar .download-curriculo a{
+    font-weight: 600;
+    letter-spacing: .2em;
+    font-size: 12px;
+    color: var(--colors-ignite-light);
+}
+
+.infos-bar .skills-info-bar .download-curriculo a:hover{
+    color: var(--colors-ignite-mid);
+}
+
+.infos-bar .infos-footer {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
+    box-shadow: rgba(15, 15, 20, 0.1) 0px 1px 4px 0px;
+}
+
+.contact-networks {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-networks a{
+    color: var(--colors-grey-400);
+}
+
+.contact-networks a:hover{
+    color: var(--colors-grey-100);
+}
+
+.progress#progress-html {
+    width: 45%;
+    animation-delay: 0.1s;
+}
+
+.progress#progress-css {
+    width: 30%; 
+    animation-delay: 0.2s;
+}
+
+.progress#progress-js {
+    width: 25%;
+    animation-delay: 0.3s;
+}
+
+.progress#progress-php {
+    width: 35%;
+    animation-delay: 0.4s;
+}
+
+.progress#progress-mysql {
+    width: 35%;
+    animation-delay: 0.4s;
+}
+
+
+@keyframes progress {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
